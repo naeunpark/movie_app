@@ -1,0 +1,48 @@
+.Movie__Columns{
+    background-color:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%;
+    margin-bottom: 50px;
+    text-overflow: ellipsis;
+    padding: 0 20px;
+    box-shadow: 0 8px 38px rgba(133, 133, 133, 0.5), 0 5px 12px rgba(133, 133, 133,0.33);
+    position: relative;
+}
+@media screen and (max-width: 600px){
+    .Movie__Columns{
+        width: 80%;
+    }
+}
+
+.Movie__Column{
+    width:35%;
+    text-overflow: ellipsis;
+}
+
+.Movie__Column:last-child{
+    padding: 20px 0;
+    width: 60%;
+}
+
+.Movie__Column h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Movie__Column .Movie__Genres{  
+    overflow: hidden;
+}
+
+.Movie__Column .Movie__Genres .Movie__Genre{
+    margin-right: 10px;
+    color: #ccc;
+}
+
+.Movie__Poster{
+    position: relative;
+    top: -20px;
+    max-width: 100%;
+}
